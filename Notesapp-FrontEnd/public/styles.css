@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #2c2b2b;
+  }
+  
+  .container {
+    width: 80%;
+    max-width: 600px;
+    background: #b3b0b0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .container h1{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 40px;
+  }
+  
+  textarea {
+    background-color: rgb(225, 225, 225);
+    border: none;
+    
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background-color: wheat;
+    font-size: 18px;
+    width: 150px;
+    height: 40px;
+    border-radius: 18px;
+    border: none;
+    padding: 10px;
+    margin-right: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+  }
+  button:hover{
+    background-color:tomato;
+    color:rgb(0, 0, 0);
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 4px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+  }
+  
+  li button {
+    background: rgb(89, 87, 87);
+    color: #fff;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+  }
+  @media (max-width: 600px) {
+    body {
+      padding: 10px;
+    }
+  
+    #notes-container {
+      padding: 0;
+    }
+  
+    .note-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    button {
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+  
+  /* Responsive design for tablets */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .note-item {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    button {
+      width: auto;
+      margin-top: 0;
+    }
+  }
